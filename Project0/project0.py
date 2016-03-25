@@ -5,5 +5,6 @@ def convert_to_capitals(input_filename, output_filename):
     convert all lowercase letters to uppercase,
     then output to output_file.
     """
-    raise NotImplementedError()
+    contents = open(input_filename, 'r').read()
+    open(output_filename, 'w').write(contents)
 
