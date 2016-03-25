@@ -6,5 +6,6 @@ def convert_to_capitals(input_filename, output_filename):
     then output to output_file.
     """
     contents = open(input_filename, 'r').read()
+    contents = contents.upper()
     open(output_filename, 'w').write(contents)
 
